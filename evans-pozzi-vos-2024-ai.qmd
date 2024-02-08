@@ -1,0 +1,205 @@
+---
+title: "Using ChatGPT to Develop a Statistical Analysis Plan: A Case Study"
+author: "Rich Evans (U Minn) & Antonio Pozzi (U Zurich)"
+date: "February 15, 2024"
+format:
+  revealjs: 
+    theme: simple
+    scrollable: true
+editor: visual
+---
+
+## Find the preprint
+
+- Google search: evans pozzi chatgpt researchgate
+- https://github.com/revans011/Rich-Evans-documents
+- No competing interests
+
+## Objective
+
+-   See if generative AI could be used to develop a statistical analysis plan
+-   Did one for a RCT
+-   Assessed it for completeness
+
+## Statistical analysis plan (SAP)
+
+- A **statistical analysis plan** is a several-page document that outlines everything statistical you plan to do in a study
+- Often required as a supplement to grant proposals
+- Sometimes a supplement to manuscript submission 
+
+## SAP importance
+
+- SAP is important because it reduces the number of post-data-collection decisions about the data analysis, thereby improving reproducibily
+
+- Useful tool for systematic, complete, and organized research
+
+## SAP importance
+
+-   SAP is important because it makes it easy to respond to statistical reviewers
+
+## The "case"
+
+- A randomized controlled trial comparing two kinds of surgical interventions for cranial cruciate ligament rupture in dogs, using ground reaction forces as outcomes
+
+- use generative AI to write a SAP prior to data collection
+
+## Generative AI (Chatbot)
+
+Generative AI refers to deep-learning models that can take raw data — say, all of Wikipedia or the collected works of Rembrandt — and “learn” to generate statistically probable outputs when prompted. (Wikipedia)
+
+## How I think of Chatbots
+
+-   Give entire VOS audience some information on a research project
+-   Ask them to write an introduction section based on that information
+-   Someone compiles the results in a sensible way
+
+## Generative AI (Chatbot)
+
+-   Useful for writing (NYT, The Morning, "First drafts" 2024-01-04)
+-   Useful for coding
+-   Not useful (yet) for innovation (Yiu, E., Kosoy, E., & Gopnik, A. (2023))
+
+## Chatbot issues
+
+-   Results are dependent on the queries
+-   I find the results more often too vague rather than wrong
+-   Journals don't like Chatbot coauthors (yet)
+
+## Chatbots do good things
+
+- improve its own answers
+- give feedback on its own answers
+
+## Chatbots: ask questions (queries)
+
+![](joke1.png)
+
+## Chatbots: improve
+
+![](joke2.png)
+
+## Chatbots: feedback
+
+![](joke3.png)
+
+## Iterative process
+
+- improve
+- feedback
+- See what's missing, ask for more
+- ask for explainations
+- regenerate
+
+## Generative AI (Chatbot) platforms
+
+- **ChatGPT 3.5**
+- Bing Chat
+- GitHub Copilot
+- Google Bard
+
+
+## Results
+
+- A good SAP took four queries
+- An initial query, and three refinements
+- We Added details, asked for deeper statistical analyses, asked for clarifications about models assumptions
+- Did not ask for feedback or improvement (my mistake)
+
+## The "case"
+
+- A randomized controlled trial comparing two kinds of surgical interventions for cranial cruciate ligament rupture in dogs, using ground reaction forces as outcome
+
+## Query 1 of 4
+
+-   **Write the statistical analysis plan** for a randomized controlled trial comparing two kinds of surgical interventions for cranial cruciate ligament rupture in dogs using ground reaction forces as outcome.
+
+## 
+
+![](chat1.png)
+
+## 
+
+![](chat2.png)
+
+## 
+
+![](chat3.png)
+
+## 
+
+![](chat3crop.jpg)
+
+## 
+
+![](chat4.png)
+
+## 
+
+![](chat4crop.jpg)
+
+## Query 2 - details added
+
+-   Write the statistical analysis plan for a randomized controlled trial comparing **tplo to lateral suture stabilization** for cranial cruciate ligament rupture in dogs using **peak vertical force** as a primary outcome. Secondary outcomes are **LOAD scores**. We have **50 dogs** per group. We want to account for **baseline measures**.
+
+## Response Query 2
+
+8.  Statistical Methods: a. Primary Outcome Analysis:
+
+-   Describe the primary analysis method, such as an **analysis of covariance (ANCOVA) with baseline peak vertical force as a covariate**.
+-   Specify the alpha level for statistical significance (e.g., 0.05).
+-   Secondary Outcome Analysis:
+-   Explain how LOAD scores will be analyzed, e.g., using mixed-effects models, re- peated measures ANOVA, or another suitable method.
+-   Subgroup Analyses:
+-   If planned, outline any subgroup analyses based on specific factors (e.g., age, breed, or preoperative severity). d. Handling of Missing Data:
+-   Describe how missing data, if any, will be handled, including imputation methods.
+-   Mention any planned sensitivity analyses to assess the robustness of the primary findings. f. Adjustment for Multiple Testing:
+-   If multiple secondary outcomes are analyzed, consider applying appropriate meth- ods to control the familywise error rate (e.g., Bonferroni correction).
+
+## Response sentences
+
+- Imperative sentences?
+- I should have asked for declarative sentences
+
+## Query 3 - asked for clarifications
+
+Write the statistical analysis plan for a randomized controlled trial comparing tplo to lateral suture stabilization for cranial cruciate ligament rupture in dogs using peak vertical force as a primary outcome. Secondary outcomes are LOAD scores. We have 50 dogs per group. **Include how we would adjust for baseline measures in the final analysis. Recommend tests for normality. How would we fix missing data?**
+
+## Response
+
+-   We were reasonably satisfied with the response to query 3. However, we knew that ANOVA has assumptions that must be satisfied for it to be valid, so we asked about them.
+-   The point here is that we can refine specific points and ask for clarifications
+
+## Query 4
+
+Write the statistical analysis plan for a randomized controlled trial comparing tplo to lateral suture stabilization for cranial cruciate ligament rupture in dogs using peak vertical force as a primary outcome. Secondary outcomes are LOAD scores. We have 50 dogs per group. Include how we would adjust for baseline measures in the final analysis. Recommend tests for normality. How would we fix missing data? **Include the model assumptions for the statistical tests.**
+
+## Response
+
+8.  Conduct normality tests (e.g., Shapiro-Wilk, Kolmogorov-Smirnov) on both primary and secondary outcome variables
+
+9.  Model Assumptions:
+
+-   **Assumptions for ANCOVA include normality of residuals and homogeneity of variances. Verify these assumptions using diagnostic plots.**
+-   **For regression or mixed-effects models, assumptions include linearity, independence of residuals, and homoscedasticity These should be checked using residual plots**
+
+## Assessment
+
+-   We assessed the results for completeness using U of Michigan's general SAP
+-   https://michr.umich.edu/resources/2019/1/17/specimen-core-amp-processing-lab-qampa
+-   Why not use theirs? Ours is study specific
+-   Could be used directly in a supplementary report
+-   our results: satisfactory
+-   Not wrong, but not perfect: Normality
+
+## Final Remarks
+
+-   Can't really reference the SAP for veracity in the main manuscript
+-   Don't give up on queries
+-   regenerate
+-   Ask the Chatbot to explain things you don't understand
+-   Always generate a SAP, fill it out as needed 
+-   Add results if you want to, for reviewers
+
+## Thank you
+
+Google search: evans pozzi chatgpt researchgate
